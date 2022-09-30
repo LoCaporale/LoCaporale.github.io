@@ -3,6 +3,9 @@ document.getElementById("selettoreInfo").addEventListener("change", displayName)
 function displayName() {
 
     if (document.getElementById("infoPersonali").selected) {
+        var foto = document.getElementById("foto");
+        foto.style = "visibility: hidden;";
+
         var tabella = document.createElement("table");
 
         var tr = document.createElement("tr");
@@ -82,6 +85,8 @@ function displayName() {
     }
 
     else if (document.getElementById("esperienze").selected) {
+        var foto = document.getElementById("foto");
+        foto.style = "visibility: hidden;";
         
         var tabella = document.createElement("table");
 
@@ -130,7 +135,7 @@ function displayName() {
         td1.style = "text-align: center; padding:5px";
         td2 = document.createElement("td");
         td1.textContent = "Principali mansioni e responsabilità";
-        td2.textContent = "Assegnato al reparto produzione per progettazione di impianti custom di raffreddamento a liquido per super-calcolatori e al reparto di ricerca e sviluppo per progettazione di prototipi";
+        td2.textContent = "Assegnato al reparto produzione per progettazione di impianti custom di raffreddamento a liquido per super-calcolatori.";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -196,6 +201,8 @@ function displayName() {
 
     }
     else if (document.getElementById("istruzione").selected) {
+        var foto = document.getElementById("foto");
+        foto.style = "visibility: hidden;";
        
         var tabella = document.createElement("table");
 
@@ -204,7 +211,7 @@ function displayName() {
         var td2 = document.createElement("td");
         td1.textContent = "Date";
         td1.style = "text-align: center; padding:10px";
-        td2.textContent = "Nel 2006 ho iniziato le scuole Primarie nell’Istituto “Gaspare Bertoni” dove ho continuato fino al 2014 completando gli studi con l’esame di terza media. Nello stesso anno mi sono iscritto presso l’Istituto I.S.I.S. Arturo Malignani di Udine e concluso gli studi nel 2020. Al termine di quest’ultimi, sono entrato nella facoltà di Informatica all’Università di Trento.";
+        td2.textContent = "2014: Diploma del primo ciclo di Istruzione.\n2020: Diploma in Informatica e Telecomunicazioni.\n";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -214,7 +221,7 @@ function displayName() {
         td1.style = "text-align: center; padding:10px";
         td2 = document.createElement("td");
         td1.textContent = "Nome e tipo di istituto di istruzione o formazione";
-        td2.textContent = "Istituto Gaspare Bertoni (Scuola di Primo Grado Paritaria).\nIstituto Tecnico I.S.I.S. Arturo Malignani (Istituto di Secondo Grado, Istituto Tecnico Industriale), Sezione Informatica e Telecomunicazioni.\nUniversità degli studi di Trento, Dipartimento di Ingegneria e Scienza dell'Informazione, Laurea in Informatica.";
+        td2.textContent = "Istruzione Primarie e Istruzione Secondaria di I grado nell’Istituto “Gaspare Bertoni” di Udine.\nIstruzione Secondaria di II grado nell'Istituto Statale di Istruzione Superiore “Arturo Malignani” di Udine, sezione Informatica e Telecomunicazioni.\nIstruzione Superiore nell'Università degli studi di Trento nella facoltà di Informatica, Dipartimento di Ingegneria e Scienza dell'Informazione.\n\n";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -234,7 +241,7 @@ function displayName() {
         td1.style = "text-align: center; padding:5px";
         td2 = document.createElement("td");
         td1.textContent = "Qualifica o certificato conseguita ";
-        td2.textContent = "Terza media, Seconda superiore e Diploma.";
+        td2.textContent = "Diploma Istruzione Secondaria di II grado in Informatica e Telecomunicazioni.";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -245,6 +252,8 @@ function displayName() {
 
     }
     else if (document.getElementById("capacita").selected) {
+        var foto = document.getElementById("foto");
+        foto.style = "visibility: hidden;";
 
         var tabella = document.createElement("table");
 
@@ -253,7 +262,7 @@ function displayName() {
         var td2 = document.createElement("td");
         td1.textContent = "Capacità e competenze generali";
         td1.style = "text-align: center; padding:5px";
-        td2.textContent = "Conoscenza di linguaggi di programmazione “C++”, “HTML”,” PYTHON”; Conoscenza Hardware e Software di un PC; Conoscenza base del microcontrollore “Arduino”; Conoscenza base del programma “CISCO Packet Tracer”, attestato da certificato ufficiale; Conoscenza media del programma “AppInvertor”; Conoscenza base di “Adobe Photoshop”; Conoscenza base di “Autodesk 360”, “Rhinoceros” e “AutoCAD”.";
+        td2.textContent = "Conoscenza dei seguenti linguaggi di programmazione: “C++”, “HTML”, “CSS”, “JAVASCRIPT” e “JAVA”;\nConoscenza Hardware e Software di un PC;\nConoscenza base del microcontrollore “Arduino”;\nConoscenza base del programma “CISCO Packet Tracer”, attestato da certificato ufficiale;\nConoscenza media del programma “AppInvertor” e “Fusion360”;\nConoscenza base di “Adobe Photoshop”;\nConoscenza base di “Autodesk 360”, “Rhinoceros” e “AutoCAD”.";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -264,7 +273,7 @@ function displayName() {
         td2 = document.createElement("td");
         td1.textContent = "Capacità e competenze relazionali";
         td1.style = "text-align: center; padding:5px";
-        td2.textContent = "Buone, acquisite nell’ambiente scolastico e in corsi extrascolastici (come il corso di alfabetizzazione degli anziani fatto nel 2017 o la competizione “EXPONI le tue idee” dello stesso anno). ";
+        td2.textContent = "Acquisite nell’ambiente scolastico e in corsi extrascolastici (come il corso di alfabetizzazione degli anziani fatto nel 2017 o la competizione “EXPONI le tue idee” dello stesso anno). ";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -275,7 +284,7 @@ function displayName() {
         td2 = document.createElement("td");
         td1.textContent = "Capacità e competenze organizzative";
         td1.style = "text-align: center; padding:5px";
-        td2.textContent = "Buone, acquisite nell’ambiente scolastico, in corsi di formazione per imprenditori e durante il periodo di alternanza scuola-lavoro (incaricato della progettazione di un prototipo).";
+        td2.textContent = "Acquisite nell’ambiente scolastico, in corsi di formazione per imprenditori (Amway Academy) e durante il periodo di alternanza scuola-lavoro.";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -286,7 +295,7 @@ function displayName() {
         td2 = document.createElement("td");
         td1.textContent = "Capacità e competenze tecniche";
         td1.style = "text-align: center; padding:5px";
-        td2.textContent = "Buone, acquisite nell’ambiente scolastico: utilizzo di CNC, corso di sicurezza in laboratorio Informatico, corso di sicurezza in laboratorio Chimico e corso di primo soccorso; extrascolastici, come i corsi CISCO “IT Essential” effettuati nel 2017 e nel 2018.";
+        td2.textContent = "Oltre a quelle già indicate nelle Capacità e compotenze generali, ho acquisito nell’ambiente scolastico: utilizzo di macchine CNC; extrascolastici: corso CISCO “IT Essential” effettuati nel 2017 e nel 2018, corso Installer Connect Training effettuato nel 2022.";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -297,7 +306,7 @@ function displayName() {
         td2 = document.createElement("td");
         td1.textContent = "Capacità e competenze";
         td1.style = "text-align: center; padding:5px";
-        td2.textContent = "Disegno tecnico nel 2016 con il programma AutoCAD e a mano, creazione di solidi e di pezzi meccanici. Conoscenze base dei seguenti programmi “Audacity”, “FL Studio” “Ableton Live” e “Sony Vegas Pro”";
+        td2.textContent = "Disegno tecnico nel 2016 con il programma AutoCAD e a mano, creazione di solidi e di pezzi meccanici. Conoscenze base dei seguenti programmi “Audacity”, “FL Studio” “Ableton Live” e “Sony Vegas Pro”.";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -308,7 +317,7 @@ function displayName() {
         td2 = document.createElement("td");
         td1.textContent = "Altre capacità e competenze";
         td1.style = "text-align: center; padding:5px";
-        td2.textContent = "Corso di sicurezza antincendio nel 2016. //AGGIUNGERE CERTIFICATI DI RISCHIO GENERALE E SPECIFICO";
+        td2.textContent = "Corso di sicurezza antincendio nel 2016.\nCorso sicurezza generale.\nCorso sicurezza in laboratorio.\nCorso sicurezza a rischio basso.";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
@@ -319,6 +328,8 @@ function displayName() {
 
     }
     else if (document.getElementById("lingue").selected) {
+        var foto = document.getElementById("foto");
+        foto.style = "visibility: hidden;";
         
         var tabella = document.createElement("table");
 
@@ -358,6 +369,8 @@ function displayName() {
 
     }
     else if (document.getElementById("altro").selected) {
+        var foto = document.getElementById("foto");
+        foto.style = "visibility: hidden;";
         
         var tabella = document.createElement("table");
 
@@ -376,7 +389,7 @@ function displayName() {
         td1.style = "text-align: center; padding:5px";
         td2 = document.createElement("td");
         td1.textContent = "Ulteriori informazioni";
-        td2.textContent = "Ampliare le conoscenze personali con aziende tecniche, seguire progetti di Ricerca e Sviluppo formativi, crescendo professionalmente e personalmente. ";
+        td2.textContent = "Vorrei ampliare le mie conoscenze con aziende specializzate nel settore Automotive e nell'ambito Informatico, seguire progetti di Ricerca e Sviluppo formativi, crescere professionalmente e personalmente. ";
         tr.appendChild(td1);
         tr.appendChild(td2);
         tabella.appendChild(tr);
