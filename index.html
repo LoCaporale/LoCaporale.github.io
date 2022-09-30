@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset = "utf-8">
+
+        <!-- importo il mio css -->
+        <link rel="stylesheet" media="screen" href="style.css">
+
+       <!-- importo il file per le icone da https://fontawesome.com/ -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- titolo pagina -->
+        <title>Caporale Federico</title>
+    </head>
+
+    <body id="body">
+
+        <div id="header">
+            <!-- bottone per cambiare colore -->
+            <button class="btn" id="cambiaColore" value="black"> <i class="fa-solid fa-yin-yang"></i> </button>
+            
+            <!-- titolo -->
+            <span id="titolo">Curriculum Vitae di Caporale Federico</span>
+
+            <!-- bottone per cambiare lingua -->
+            <select id="selettoreLingua">
+                <option value = "italiano"><i class="fa-solid fa-yin-yang"></i> ITALIANO</option>
+                <option value = "inglese"><i class="fa-solid fa-yin-yang"></i> INGLESE </option>
+            </select>
+
+        </div>
+            
+        <div id="main">
+
+                <!-- menu per selezionare cosa si vuole vedere -->
+                <select id="selettoreInfo">
+                    <option id="infoPersonali"> Informazioni personali </option>
+                    <option id="esperienze"> Esperienze lavorative </option>
+                    <option id = "istruzione"> Istruzione e formazione </option>
+                    <option id = "capacita"> Capacità e competenze </option>
+                    <option id = "lingue"> Conoscenze linguistiche </option>
+                    <option id = "altro"> Ulteriori informazioni </option>
+                </select>
+                
+                <!-- qui vengono aggiunte dinamicamente la/le tabella/e in base alla selezione -->
+                <div id="space"></div>
+
+        </div>
+    
+        <!-- pie' di pagina con titolo specifico -->
+        <div id="footer">Pagina : Curriculum Vitae di Caporale Federico</div>
+        
+        <!-- importo i due script -->
+        <script src="cambiaLingua&Colore.js"></script>
+        <script src="gestioneMenu.js"></script>
+
+    </body>
+</html>
