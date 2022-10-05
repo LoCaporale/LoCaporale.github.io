@@ -6,10 +6,10 @@ function changeColore() {
     var bottone = document.getElementById("cambiaColore");
 
     if (bottone.value == "white") {
-        //cambio valore al bottone del cambiaColore
+        //cambio valore al bottone del cambiaColores
         bottone.value = "black";
         //setto lo stile nero
-        body.style = "color: black; background-color:black;  background-image: url('bg.gif');";
+        body.style = "color: black; background-color:black;  background-image: url('bgNero.jpg');";
         //cambio colore al bottone del cambiaColore
         bottone.style = "color: white;";
 
@@ -32,13 +32,12 @@ function changeColore() {
         var footer = document.getElementById("footer");
         //cambio colore al bottone del footer
         footer.style = "color: white; background-color: transparent; border-color: white;";
-
     }
     else if (bottone.value == "black") {
         //cambio valore al bottone del cambiaColore
         bottone.value = "white";
         //setto lo stile nero
-        body.style = "color: white; background-color:white;  background-image: none;";
+        body.style = "color: white; background-color:white;  background-image:  url('bgBianco.jpg');";
         //cambio colore al bottone del cambiaColore
         bottone.style = "color: black;";
 
@@ -62,7 +61,6 @@ function changeColore() {
 
         //cambio colore al bottone del footer
         footer.style = "color: black; background-color: white; border-color: black;";
-
     }
 }
 
