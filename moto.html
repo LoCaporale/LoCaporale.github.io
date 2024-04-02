@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset = "utf-8">
+<head>
+    <meta charset="utf-8">
 
-        <!-- importo il mio css -->
-        <link rel="stylesheet" media="screen" href="style.css">
+    <!-- importo il mio css -->
+    <link rel="stylesheet" media="screen" href="style.css">
 
-        <!-- tailwind per le icone -->
-        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- tailwind per le icone -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
-        <!-- titolo pagina -->
-        <title>Caporale Federico</title>
+    <!-- titolo pagina -->
+    <title>Caporale Federico</title>
 
-        <!-- un po' di spam -->
-        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
-        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>-->
-    </head>
+    <!-- un po' di spam -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <body class="body">
+<body class="body">
 
-        <!-- header -->
-        <div class="header">
+    <!-- header -->
+    <div class="header">
 
-                <!-- bottone per cambiare tema -->
-                <!--<button class="absolute left-4 bg-grey-light hover:bg-grey text-grey-darkest font-bold py-3 px-3 rounded inline-flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                    </svg>
-                </button>-->
+        <!-- bottone per cambiare tema -->
+        <!--<button class="absolute left-4 bg-grey-light hover:bg-grey text-grey-darkest font-bold py-3 px-3 rounded inline-flex items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+            </svg>
+        </button>-->
 
-                <!-- foto sferica -->
-                <!--<img class="select-none absolute top-1 left-24 w-10 h-10 rounded-full" src="fotoMia.jpg" alt="Foto profilo">-->
+        <!-- home -->
+        <a href="index.html">
+            <button>Home</button>
+        </a>
 
-                <!-- home -->
-                <a href="index.html">
-                    <button>Home</button>
-                </a>
+        <!-- moto -->
+        <a href="moto.html">
+            <button>Moto</button>
+        </a>
 
-                <!-- moto -->
-                <a href="moto.html">
-                    <button>Moto</button>
-                </a>
+        <!-- progetti -->
+        <a href="projects.html">
+            <button>Progetti</button>
+        </a>
 
-                <!-- progetti -->
-                <a href="projects.html">
-                    <button>Progetti</button>
-                </a>
+        <!-- CV -->
+        <a href="cv.html">
+            <button>CV</button>
+        </a>
 
-                <!-- CV -->
-                <a href="cv.html">
-                <button>CV</button>
-                </a>
+    </div>
 
+    <!-- titolo -->
+    <div class="main_body" style="font-weight: bold; padding-bottom: 3%;">
+        <h3>Sezione moto di Federico Caporale</h3>
+    </div>
+
+    <!-- elementi della pagina -->
+    <div class="container">
+        <div class="description">
+            <p>
+                <h6>Suzuki DRZ 400 SM 2006:</h6> 
+                Tubi in treccia areonautica, pastiglie brembo racing, pistone ad alta compressione Athena 434cc, filtro aria K&N, lavorazioni condotti di scarico, kit carburazione DynoJet, 3x3 mod, frecce full led, portatarga acerbis nero con luce targa led, faro anteriore full led, protezione carter maggiorata in alluminio spesso e scarico completo inox Delkevic
+            </p>
         </div>
-        
-        <!-- titolo -->
-        <div class="main_body" style="font-weight: bold; padding-bottom: 3%;">
-            <h1>Benvenuti nel sito di <span style="color: #e4d2b9; font-size: larger;">Federico Caporale</span></h1>
+        <img src="drz.jpeg" alt="drz image missing" class="image">
+    </div>
+
+    <div class="container" style="margin-bottom: 200px;">
+        <img src="636.jpg" alt="636 image missing" class="image">
+        <div class="description">
+            <p>
+                <h6>Kawasaki ZX6R 636 2004:</h6> 
+                Scarico diretto con fondello in carbonio senza db killer, frecce posteriori led lightech, portatarga barracuda con luce led e catadiottro barracuda  
+            </p>
         </div>
-
-        <!-- descrizione -->
-        <div class="main_body" style="font-weight: 600; padding-bottom: 5%;">
-            Vorrei ampliare le mie conoscenze con aziende specializzate nel settore Automotive e nell'ambito Informatico,
-            seguire progetti di Ricerca e Sviluppo formativi, crescere professionalmente e personalmente.
-        </div>
-
-        <img class="immagine" src="fotoMia.jpg" alt="Foto profilo">
-
-    </body>
+    </div>
 
     <!-- footer con loghi -->
     <footer class="footer">
@@ -183,6 +190,13 @@
         
         Realizzato da Federico Caporale
 
-        </footer>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    </body>
 
 </html> 

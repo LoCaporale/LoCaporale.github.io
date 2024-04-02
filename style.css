@@ -1,16 +1,78 @@
-/* Page content */
-.content {
-  padding: 16px;
+/* Header */
+.header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space items evenly */
+    padding: 2% 20px; /* Add padding for better spacing */
+    margin: 5%; /* Add margin between buttons */
+    padding-bottom: 5%;
+    color: #1a202c;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
+.header button {
+    font-weight: bold;
+    color: #1a202c;
+}
+.header button:hover {
+    color: white;
 }
 
-/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 102px;
+/* All body */
+.body {
+    background-color: #7395AE;
 }
+
+.main_body {
+    color: #1a202c;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.immagine {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c4b194;
+    color: #1a202c;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+.text-center > div {
+    margin-bottom: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.image {
+float: left; /* Float the image to the left */
+margin-right: 20px; /* Add some margin for spacing */
+max-width: 200px; /* Limit image width if necessary */
+height: auto; /* Maintain aspect ratio */
+}
+
+/*
+5D5C61
+379683
+557A95
+B1AA296
+*/
